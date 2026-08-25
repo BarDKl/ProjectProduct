@@ -3,7 +3,7 @@
 from collections import defaultdict
 from datetime import date, timedelta
 
-TOLERANCE_DAYS = 4  # ponytail: fixed tolerance band, make configurable if bill types diverge
+TOLERANCE_DAYS = 4
 
 
 def _parse(d: str) -> date:
@@ -59,22 +59,3 @@ def safe_to_spend(transactions: list[dict], as_of: date, window_days: int = 14) 
         "safe_to_spend": round(balance + upcoming_total, 2),
         "upcoming_bills": upcoming,
     }
-
-
-if __name__ == "__main__":
-    txns = [
-        {"date": "2026-06-01", "amount": -2500.0, "type": "debit", "description": "Rent"},
-        {"date": "2026-07-01", "amount": -2500.0, "type": "debit", "description": "Rent"},
-        {"date": "2026-08-01", "amount": -2500.0, "type": "debit", "description": "Rent"},
-        {"date": "2026-08-10", "amount": -30.0, "type": "debit", "description": "Coffee"},
-        {"date": "2026-08-20", "amount": 3000.0, "type": "credit", "description": "Salary"},
-    ]
-    bills = detect_recurring_bills(txns)
-    assert len(bills) == 1 and bills[0]["description"] == "Rent"
-    assert bills[0]["next_due"] == "2026-08-31"
-
-    result = safe_to_spend(txns, as_of=date(2026, 8, 15), window_days=20)
-    assert result["ledger_balance"] == round(3000 - 2500 * 3 - 30, 2)
-    assert result["upcoming_liabilities"] == -2500.0
-    assert result["safe_to_spend"] == round(result["ledger_balance"] - 2500.0, 2)
-    print("ok")

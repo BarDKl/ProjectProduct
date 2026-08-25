@@ -15,9 +15,9 @@
 
 ## Should Have
 
-- Confidence score per detected recurring bill
-- `/transactions/seed` endpoint to regenerate mock data on demand
-- Unit tests covering the detection logic (core business risk area)
+- Confidence score per detected recurring bill — **not completed, backlog**
+- `/transactions/seed` endpoint to regenerate mock data on demand — **not completed, backlog**
+- Unit tests covering the detection logic (core business risk area) — ✅ done (`app/tests/`)
 
 ## Could Have
 

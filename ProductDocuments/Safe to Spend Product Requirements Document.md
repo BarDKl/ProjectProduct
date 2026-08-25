@@ -136,13 +136,13 @@ The Safe-to-Spend Engine is a backend predictive API microservice (Python 3.12 /
 | ID | User Story | Acceptance Criteria |
 | --- | --- | --- |
 | US-1 | As a user, I want to see a Safe-to-Spend balance instead of just my raw balance, so I know what I can actually spend. | Given a user with ≥1 detected recurring liability, when they request their balance, then the API returns a `safe_to_spend` value lower than the raw ledger balance by the sum of liabilities due in the next 14 days. |
-| US-2 | As a user, I want recurring bills detected automatically, so I don't have to configure anything manually. | Given ≥3 historical transactions to the same payee at a consistent interval (±3 days) and consistent amount (±5%), when the detector runs, then that payee is classified as a recurring liability. |
+| US-2 | As a user, I want recurring bills detected automatically, so I don't have to configure anything manually. | Given ≥2 historical transactions to the same payee at the exact same amount and at a consistent interval (each gap within ±4 days of the average gap), when the detector runs, then that payee is classified as a recurring liability. Amount is matched exactly — variable-amount bills (e.g. utilities) are not yet detected (see Edge Cases below). |
 | US-3 | As a user, I want to understand why my Safe-to-Spend number is lower than my balance, so I trust the figure. | Given a non-zero deduction, when the API responds, then the response includes the itemized list of upcoming liabilities (payee, amount, expected date) that make up the deduction. |
 
 **Edge Cases**
 
-- New user with insufficient transaction history to establish a recurring pattern (< 3 occurrences).
-- Recurring bill with a variable amount (e.g. utilities) — amount tolerance threshold must not over- or under-classify.
+- New user with insufficient transaction history to establish a recurring pattern (< 2 occurrences).
+- Recurring bill with a variable amount (e.g. utilities) — not yet handled; detection currently requires an exact amount match, so amount drift breaks grouping entirely (no tolerance band implemented). Backlog item.
 - Subscription cancelled by the user but still appearing in historical data.
 - Liability due exactly on day 14 (boundary condition of the rolling window).
 - Payee name inconsistency across transactions (e.g. "[NETFLIX.COM](http://NETFLIX.COM)" vs "Netflix").
@@ -168,6 +168,4 @@ The Safe-to-Spend Engine is a backend predictive API microservice (Python 3.12 /
 ## 9. Related Documents
 
 1. [Market Research Report](https://app.notion.com/p/Market-Research-Report-3ba32be71aab80e2a209de22783f458c?pvs=21) ✅ Complete
-2. Tech Planning Document — *not yet created*
-3. Design Planning Document — *not yet created*
-4. Go-to-Market Plan — *not yet created*
+2. [MVP Scope](./MVP%20Scope.md) ✅ Complete
