@@ -12,7 +12,7 @@ Bank users frequently experience **"subscription fatigue"** — a state in which
 
 **Why this matters to two audiences:**
 
-1. **For the bank (Revolut):** Uncertainty around upcoming liabilities drives defensive behaviour — users hoard cash "just in case," which suppresses card spend (and therefore interchange revenue), and drives a high volume of avoidable "Where did my money go?" support contacts when the model breaks down (overdrafts, declines).
+1. **For the bank:** Uncertainty around upcoming liabilities drives defensive behaviour — users hoard cash "just in case," which suppresses card spend (and therefore interchange revenue), and drives a high volume of avoidable "Where did my money go?" support contacts when the model breaks down (overdrafts, declines).
 2. **For the user:** A clear, forward-looking number reduces financial anxiety, restores a sense of control, and supports mindful, confident spending decisions — directly addressing the Jobs to Be Done in Section 4.
 
 ## 2. How Do We Measure Success?
@@ -96,7 +96,7 @@ Findings are detailed in the companion [Market Research Report](https://app.noti
 - UK/EU consumers carry an estimated **£15–20/month in "silent" subscription leakage** (industry estimates), compounded by static ledger balances that misrepresent true spending power.
 - Competitor benchmarking (Barclays, HSBC, Monzo, Starling) shows **no major player offers automated, zero-setup, forward-looking liability forecasting** — existing solutions (e.g. Monzo/Starling "Bills Pots") rely on manual user configuration. This is a genuine white space, not an incremental feature.
 - The core insight from research: the pain point isn't a lack of transaction data — it's a lack of **interpretation**. Users already generate the signal; no system currently converts it into a forward-looking number.
-- "Balance confusion" and overdraft-related queries are established as a recurring, high-volume support category industry-wide, directly linking this problem to support cost (a Revolut KPI).
+- "Balance confusion" and overdraft-related queries are established as a recurring, high-volume support category industry-wide, directly linking this problem to support cost (a Bank KPI).
 
 ## 6. Solution
 
@@ -159,7 +159,7 @@ The Safe-to-Spend Engine is a backend predictive API microservice (Python 3.12 /
 
 ## 8. Dependencies
 
-- **Open Questions:** Should Safe-to-Spend be opt-in or default-on at launch? How are multi-currency wallets (a Revolut-specific case) handled in the deduction logic?
+- **Open Questions:** Should Safe-to-Spend be opt-in or default-on at launch? How are multi-currency wallets (a Bank-specific case) handled in the deduction logic?
 - **Infrastructure requirements:** None beyond the containerized microservice itself for the PoC — no production data pipeline required at this stage.
 - **Budget approvals:** N/A for PoC (portfolio project, no real infra spend); would require standard cloud-hosting approval if progressed toward pilot.
 - **Partner support (APIs, partnerships):** None for MVP — real Open Banking integration is explicitly deferred beyond this PoC.
