@@ -169,3 +169,4 @@ The Safe-to-Spend Engine is a backend predictive API microservice (Python 3.12 /
 
 1. [Market Research Report](https://app.notion.com/p/Market-Research-Report-3ba32be71aab80e2a209de22783f458c?pvs=21) ✅ Complete
 2. [MVP Scope](./MVP%20Scope.md) ✅ Complete
+3. [PoC Report](./PoC%20Report.md) ✅ Complete
