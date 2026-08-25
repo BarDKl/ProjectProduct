@@ -1,44 +1,38 @@
 # Safe-to-Spend Engine
 
-A backend proof-of-concept that turns a static ledger balance into a forward-looking
-**Safe-to-Spend** figure — ledger balance minus recurring liabilities (rent, subscriptions,
-utilities) due in the next N days.
+A portfolio project for the **Technical Product Owner** track: end-to-end problem
+framing, market research, a PRD, and a working PoC for a fintech feature.
 
-Built as a fintech Product Owner portfolio project: full problem framing → market research →
-PRD → PoC implementation.
+**The idea:** bank apps show a static balance that ignores upcoming bills (rent,
+subscriptions, utilities), so people misjudge what they can actually spend. This
+PoC deducts detected recurring bills from the balance to show a trustworthy
+**Safe-to-Spend** number — no ML, no bank integration, just deterministic rules.
 
-## Why
+## Product docs
 
-Bank apps show a static balance that doesn't distinguish money that's genuinely free to spend
-from money already earmarked for upcoming bills. This PoC proves the core hypothesis —
-that deterministic, zero-setup recurring-bill detection is enough to produce a trustworthy
-forward-looking balance, with no ML or Open Banking integration required.
-
-See [`ProductDocuments/`](./ProductDocuments) for the full Market Research Report, MVP Scope
-(MoSCoW), and Product Requirements Document behind this build.
+| Doc | What's in it |
+| --- | --- |
+| [Market Research Report](https://app.notion.com/p/3ba32be71aab80e2a209de22783f458c) | The problem, competitor benchmarking, evidence |
+| [Product Requirements Document](https://app.notion.com/p/ced32be71aab82bbb77501fd741b9510) | Objective, OKRs, personas, user stories, solution |
+| [MVP Scope](https://app.notion.com/p/3ba32be71aab800c9054c4e19c864eba) | MoSCoW scope for the PoC build |
+| [PoC Report](https://app.notion.com/p/3ba32be71aab80579d7ef145aa2b9481) | What was built, proof it works, next steps |
 
 ## How it works
 
-1. Ingests a user's transaction history (synthetic data, generated via `Faker`, shaped like
-   Open Banking transactions).
-2. Groups debits by `(description, amount)` and flags a group as a recurring liability when its
-   occurrence intervals are consistent within a tolerance window.
-3. Projects each detected liability's next due date forward and sums those falling within the
-   requested rolling window (default 14 days).
-4. Returns `safe_to_spend = ledger_balance - upcoming_liabilities`, along with the itemized
-   bills driving the deduction.
+1. Ingest a user's transaction history (synthetic, generated with `Faker`).
+2. Detect recurring bills — same payee, same amount, consistent interval.
+3. Project each bill's next due date and sum those falling in the next 14 days.
+4. Return `safe_to_spend = ledger_balance − upcoming_liabilities`, with the
+   itemized bills behind that number.
 
 ## Running it
 
-**Docker (recommended):**
-
 ```bash
 cd app
-docker build -t safe-to-spend .
-docker run -p 8000:8000 safe-to-spend
+docker build -t safe-to-spend . && docker run -p 8000:8000 safe-to-spend
 ```
 
-**Locally with [uv](https://github.com/astral-sh/uv):**
+Or locally with [uv](https://github.com/astral-sh/uv):
 
 ```bash
 cd app
@@ -47,19 +41,7 @@ uv run python data_generator.py   # generates synthetic_data.json
 uv run uvicorn main:app --reload
 ```
 
-API docs (Swagger UI) are then available at `http://localhost:8000/docs`.
-
-## Running the tests
-
-```bash
-cd app
-uv sync --group dev
-uv run pytest
-```
-
-Tests cover the recurring-bill detector and Safe-to-Spend calculation, including the edge
-cases called out in the PRD (insufficient history, variable-amount bills, false positives,
-rolling-window boundary).
+Swagger docs: `http://localhost:8000/docs`. Tests: `uv run pytest` (after `uv sync --group dev`).
 
 ## Endpoints
 
@@ -67,21 +49,11 @@ rolling-window boundary).
 | --- | --- | --- |
 | `GET` | `/health` | Liveness check |
 | `GET` | `/users` | List synthetic users |
-| `GET` | `/users/{user_id}/transactions` | Raw transaction history for a user |
-| `GET` | `/users/{user_id}/liabilities` | All detected recurring bills for a user |
-| `GET` | `/users/{user_id}/balance/safe?window_days=14` | Safe-to-Spend balance + itemized upcoming bills |
+| `GET` | `/users/{user_id}/transactions` | Raw transaction history |
+| `GET` | `/users/{user_id}/liabilities` | Detected recurring bills |
+| `GET` | `/users/{user_id}/balance/safe?window_days=14` | Safe-to-Spend balance + itemized bills |
 
-## Project structure
+## Stack
 
-```
-app/
-  main.py            FastAPI app and routes
-  recurring.py        Recurring-bill detection + Safe-to-Spend calculation
-  data_generator.py   Synthetic transaction dataset generator (Faker)
-  tests/              Pytest suite for detection + Safe-to-Spend logic
-  Dockerfile
-ProductDocuments/
-  Market Research Report.md
-  MVP Scope.md
-  Safe to Spend Product Requirements Document.md
-```
+Python 3.12, FastAPI, Docker. `app/` holds the service; `ProductDocuments/` holds
+local copies of the docs above.
