@@ -1,0 +1,1301 @@
+{
+  "generated_at": "2026-08-25T13:23:19.802484",
+  "user_count": 5,
+  "users": [
+    {
+      "user_id": "USER_00001",
+      "name": "Blanka Ko\u0142aczek",
+      "email": "olgierdwziatek@example.org",
+      "transactions": [
+        {
+          "date": "2026-05-27",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-06-01",
+          "amount": -2500.0,
+          "type": "debit",
+          "category": "Housing",
+          "description": "Rent"
+        },
+        {
+          "date": "2026-06-01",
+          "amount": -133.95,
+          "type": "debit",
+          "category": "Transport",
+          "description": "Restaurant"
+        },
+        {
+          "date": "2026-06-07",
+          "amount": -79.09,
+          "type": "debit",
+          "category": "Transport",
+          "description": "Pharmacy"
+        },
+        {
+          "date": "2026-06-10",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-06-15",
+          "amount": -49.99,
+          "type": "debit",
+          "category": "Subscription",
+          "description": "Netflix"
+        },
+        {
+          "date": "2026-06-20",
+          "amount": -129.0,
+          "type": "debit",
+          "category": "Utilities",
+          "description": "Internet & Phone"
+        },
+        {
+          "date": "2026-06-23",
+          "amount": -50.37,
+          "type": "debit",
+          "category": "Shopping",
+          "description": "Supermarket"
+        },
+        {
+          "date": "2026-06-23",
+          "amount": -191.66,
+          "type": "debit",
+          "category": "Transport",
+          "description": "Restaurant"
+        },
+        {
+          "date": "2026-06-24",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-06-25",
+          "amount": -173.96,
+          "type": "debit",
+          "category": "Entertainment",
+          "description": "Clothing"
+        },
+        {
+          "date": "2026-06-27",
+          "amount": -48.53,
+          "type": "debit",
+          "category": "Healthcare",
+          "description": "Restaurant"
+        },
+        {
+          "date": "2026-07-01",
+          "amount": -2500.0,
+          "type": "debit",
+          "category": "Housing",
+          "description": "Rent"
+        },
+        {
+          "date": "2026-07-01",
+          "amount": -162.84,
+          "type": "debit",
+          "category": "Groceries",
+          "description": "Gas"
+        },
+        {
+          "date": "2026-07-08",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-07-12",
+          "amount": -117.58,
+          "type": "debit",
+          "category": "Healthcare",
+          "description": "Restaurant"
+        },
+        {
+          "date": "2026-07-13",
+          "amount": -74.28,
+          "type": "debit",
+          "category": "Healthcare",
+          "description": "Clothing"
+        },
+        {
+          "date": "2026-07-15",
+          "amount": -49.99,
+          "type": "debit",
+          "category": "Subscription",
+          "description": "Netflix"
+        },
+        {
+          "date": "2026-07-20",
+          "amount": -129.0,
+          "type": "debit",
+          "category": "Utilities",
+          "description": "Internet & Phone"
+        },
+        {
+          "date": "2026-07-22",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-07-24",
+          "amount": -109.56,
+          "type": "debit",
+          "category": "Entertainment",
+          "description": "Restaurant"
+        },
+        {
+          "date": "2026-07-24",
+          "amount": -128.96,
+          "type": "debit",
+          "category": "Transport",
+          "description": "Gas"
+        },
+        {
+          "date": "2026-08-01",
+          "amount": -2500.0,
+          "type": "debit",
+          "category": "Housing",
+          "description": "Rent"
+        },
+        {
+          "date": "2026-08-04",
+          "amount": -86.81,
+          "type": "debit",
+          "category": "Entertainment",
+          "description": "Gym"
+        },
+        {
+          "date": "2026-08-05",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-08-05",
+          "amount": -62.17,
+          "type": "debit",
+          "category": "Healthcare",
+          "description": "Gym"
+        },
+        {
+          "date": "2026-08-06",
+          "amount": -43.77,
+          "type": "debit",
+          "category": "Healthcare",
+          "description": "Electronics"
+        },
+        {
+          "date": "2026-08-10",
+          "amount": -87.27,
+          "type": "debit",
+          "category": "Groceries",
+          "description": "Restaurant"
+        },
+        {
+          "date": "2026-08-12",
+          "amount": -56.58,
+          "type": "debit",
+          "category": "Groceries",
+          "description": "Electronics"
+        },
+        {
+          "date": "2026-08-15",
+          "amount": -49.99,
+          "type": "debit",
+          "category": "Subscription",
+          "description": "Netflix"
+        },
+        {
+          "date": "2026-08-16",
+          "amount": -26.71,
+          "type": "debit",
+          "category": "Healthcare",
+          "description": "Clothing"
+        },
+        {
+          "date": "2026-08-19",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-08-20",
+          "amount": -129.0,
+          "type": "debit",
+          "category": "Utilities",
+          "description": "Internet & Phone"
+        },
+        {
+          "date": "2026-08-21",
+          "amount": -149.43,
+          "type": "debit",
+          "category": "Shopping",
+          "description": "Restaurant"
+        },
+        {
+          "date": "2026-08-24",
+          "amount": -87.41,
+          "type": "debit",
+          "category": "Transport",
+          "description": "Gas"
+        },
+        {
+          "date": "2026-08-24",
+          "amount": -187.65,
+          "type": "debit",
+          "category": "Healthcare",
+          "description": "Restaurant"
+        }
+      ]
+    },
+    {
+      "user_id": "USER_00002",
+      "name": "Jerzy So\u0142oducha",
+      "email": "adrianopiola@example.com",
+      "transactions": [
+        {
+          "date": "2026-05-27",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-05-31",
+          "amount": -161.98,
+          "type": "debit",
+          "category": "Entertainment",
+          "description": "Clothing"
+        },
+        {
+          "date": "2026-06-01",
+          "amount": -2500.0,
+          "type": "debit",
+          "category": "Housing",
+          "description": "Rent"
+        },
+        {
+          "date": "2026-06-04",
+          "amount": -46.14,
+          "type": "debit",
+          "category": "Shopping",
+          "description": "Electronics"
+        },
+        {
+          "date": "2026-06-09",
+          "amount": -174.75,
+          "type": "debit",
+          "category": "Transport",
+          "description": "Haircut"
+        },
+        {
+          "date": "2026-06-10",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-06-15",
+          "amount": -49.99,
+          "type": "debit",
+          "category": "Subscription",
+          "description": "Netflix"
+        },
+        {
+          "date": "2026-06-15",
+          "amount": -127.35,
+          "type": "debit",
+          "category": "Healthcare",
+          "description": "Cafe"
+        },
+        {
+          "date": "2026-06-20",
+          "amount": -129.0,
+          "type": "debit",
+          "category": "Utilities",
+          "description": "Internet & Phone"
+        },
+        {
+          "date": "2026-06-24",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-06-27",
+          "amount": -36.86,
+          "type": "debit",
+          "category": "Entertainment",
+          "description": "Clothing"
+        },
+        {
+          "date": "2026-06-27",
+          "amount": -150.27,
+          "type": "debit",
+          "category": "Shopping",
+          "description": "Clothing"
+        },
+        {
+          "date": "2026-06-29",
+          "amount": -194.52,
+          "type": "debit",
+          "category": "Dining",
+          "description": "Books"
+        },
+        {
+          "date": "2026-06-30",
+          "amount": -154.88,
+          "type": "debit",
+          "category": "Transport",
+          "description": "Restaurant"
+        },
+        {
+          "date": "2026-07-01",
+          "amount": -2500.0,
+          "type": "debit",
+          "category": "Housing",
+          "description": "Rent"
+        },
+        {
+          "date": "2026-07-03",
+          "amount": -89.78,
+          "type": "debit",
+          "category": "Entertainment",
+          "description": "Supermarket"
+        },
+        {
+          "date": "2026-07-06",
+          "amount": -46.46,
+          "type": "debit",
+          "category": "Entertainment",
+          "description": "Cafe"
+        },
+        {
+          "date": "2026-07-07",
+          "amount": -169.36,
+          "type": "debit",
+          "category": "Groceries",
+          "description": "Cinema"
+        },
+        {
+          "date": "2026-07-08",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-07-12",
+          "amount": -47.77,
+          "type": "debit",
+          "category": "Dining",
+          "description": "Books"
+        },
+        {
+          "date": "2026-07-15",
+          "amount": -49.99,
+          "type": "debit",
+          "category": "Subscription",
+          "description": "Netflix"
+        },
+        {
+          "date": "2026-07-20",
+          "amount": -129.0,
+          "type": "debit",
+          "category": "Utilities",
+          "description": "Internet & Phone"
+        },
+        {
+          "date": "2026-07-22",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-07-25",
+          "amount": -108.18,
+          "type": "debit",
+          "category": "Shopping",
+          "description": "Supermarket"
+        },
+        {
+          "date": "2026-07-29",
+          "amount": -22.73,
+          "type": "debit",
+          "category": "Groceries",
+          "description": "Restaurant"
+        },
+        {
+          "date": "2026-08-01",
+          "amount": -2500.0,
+          "type": "debit",
+          "category": "Housing",
+          "description": "Rent"
+        },
+        {
+          "date": "2026-08-05",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-08-09",
+          "amount": -88.54,
+          "type": "debit",
+          "category": "Shopping",
+          "description": "Cafe"
+        },
+        {
+          "date": "2026-08-11",
+          "amount": -17.39,
+          "type": "debit",
+          "category": "Entertainment",
+          "description": "Gym"
+        },
+        {
+          "date": "2026-08-12",
+          "amount": -128.82,
+          "type": "debit",
+          "category": "Shopping",
+          "description": "Electronics"
+        },
+        {
+          "date": "2026-08-15",
+          "amount": -49.99,
+          "type": "debit",
+          "category": "Subscription",
+          "description": "Netflix"
+        },
+        {
+          "date": "2026-08-16",
+          "amount": -139.19,
+          "type": "debit",
+          "category": "Dining",
+          "description": "Haircut"
+        },
+        {
+          "date": "2026-08-17",
+          "amount": -94.48,
+          "type": "debit",
+          "category": "Transport",
+          "description": "Gas"
+        },
+        {
+          "date": "2026-08-19",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-08-20",
+          "amount": -129.0,
+          "type": "debit",
+          "category": "Utilities",
+          "description": "Internet & Phone"
+        },
+        {
+          "date": "2026-08-22",
+          "amount": -145.54,
+          "type": "debit",
+          "category": "Healthcare",
+          "description": "Books"
+        }
+      ]
+    },
+    {
+      "user_id": "USER_00003",
+      "name": "Robert Stanis\u0142awczyk",
+      "email": "ksklorz@example.net",
+      "transactions": [
+        {
+          "date": "2026-05-27",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-05-29",
+          "amount": -119.72,
+          "type": "debit",
+          "category": "Dining",
+          "description": "Gym"
+        },
+        {
+          "date": "2026-06-01",
+          "amount": -2500.0,
+          "type": "debit",
+          "category": "Housing",
+          "description": "Rent"
+        },
+        {
+          "date": "2026-06-03",
+          "amount": -51.97,
+          "type": "debit",
+          "category": "Shopping",
+          "description": "Restaurant"
+        },
+        {
+          "date": "2026-06-03",
+          "amount": -49.64,
+          "type": "debit",
+          "category": "Groceries",
+          "description": "Pharmacy"
+        },
+        {
+          "date": "2026-06-05",
+          "amount": -105.26,
+          "type": "debit",
+          "category": "Transport",
+          "description": "Haircut"
+        },
+        {
+          "date": "2026-06-06",
+          "amount": -147.72,
+          "type": "debit",
+          "category": "Groceries",
+          "description": "Books"
+        },
+        {
+          "date": "2026-06-10",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-06-11",
+          "amount": -53.34,
+          "type": "debit",
+          "category": "Groceries",
+          "description": "Pharmacy"
+        },
+        {
+          "date": "2026-06-12",
+          "amount": -30.04,
+          "type": "debit",
+          "category": "Entertainment",
+          "description": "Books"
+        },
+        {
+          "date": "2026-06-15",
+          "amount": -49.99,
+          "type": "debit",
+          "category": "Subscription",
+          "description": "Netflix"
+        },
+        {
+          "date": "2026-06-16",
+          "amount": -110.18,
+          "type": "debit",
+          "category": "Shopping",
+          "description": "Supermarket"
+        },
+        {
+          "date": "2026-06-17",
+          "amount": -56.69,
+          "type": "debit",
+          "category": "Shopping",
+          "description": "Cafe"
+        },
+        {
+          "date": "2026-06-20",
+          "amount": -129.0,
+          "type": "debit",
+          "category": "Utilities",
+          "description": "Internet & Phone"
+        },
+        {
+          "date": "2026-06-21",
+          "amount": -144.03,
+          "type": "debit",
+          "category": "Entertainment",
+          "description": "Haircut"
+        },
+        {
+          "date": "2026-06-23",
+          "amount": -186.14,
+          "type": "debit",
+          "category": "Healthcare",
+          "description": "Electronics"
+        },
+        {
+          "date": "2026-06-24",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-06-24",
+          "amount": -6.4,
+          "type": "debit",
+          "category": "Healthcare",
+          "description": "Haircut"
+        },
+        {
+          "date": "2026-07-01",
+          "amount": -2500.0,
+          "type": "debit",
+          "category": "Housing",
+          "description": "Rent"
+        },
+        {
+          "date": "2026-07-08",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-07-12",
+          "amount": -176.35,
+          "type": "debit",
+          "category": "Transport",
+          "description": "Cinema"
+        },
+        {
+          "date": "2026-07-15",
+          "amount": -49.99,
+          "type": "debit",
+          "category": "Subscription",
+          "description": "Netflix"
+        },
+        {
+          "date": "2026-07-18",
+          "amount": -42.13,
+          "type": "debit",
+          "category": "Groceries",
+          "description": "Haircut"
+        },
+        {
+          "date": "2026-07-20",
+          "amount": -129.0,
+          "type": "debit",
+          "category": "Utilities",
+          "description": "Internet & Phone"
+        },
+        {
+          "date": "2026-07-21",
+          "amount": -74.09,
+          "type": "debit",
+          "category": "Entertainment",
+          "description": "Taxi"
+        },
+        {
+          "date": "2026-07-22",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-07-28",
+          "amount": -46.78,
+          "type": "debit",
+          "category": "Dining",
+          "description": "Electronics"
+        },
+        {
+          "date": "2026-07-30",
+          "amount": -123.75,
+          "type": "debit",
+          "category": "Dining",
+          "description": "Pharmacy"
+        },
+        {
+          "date": "2026-08-01",
+          "amount": -2500.0,
+          "type": "debit",
+          "category": "Housing",
+          "description": "Rent"
+        },
+        {
+          "date": "2026-08-05",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-08-08",
+          "amount": -117.36,
+          "type": "debit",
+          "category": "Dining",
+          "description": "Taxi"
+        },
+        {
+          "date": "2026-08-11",
+          "amount": -68.21,
+          "type": "debit",
+          "category": "Groceries",
+          "description": "Restaurant"
+        },
+        {
+          "date": "2026-08-15",
+          "amount": -49.99,
+          "type": "debit",
+          "category": "Subscription",
+          "description": "Netflix"
+        },
+        {
+          "date": "2026-08-18",
+          "amount": -77.82,
+          "type": "debit",
+          "category": "Shopping",
+          "description": "Taxi"
+        },
+        {
+          "date": "2026-08-19",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-08-20",
+          "amount": -129.0,
+          "type": "debit",
+          "category": "Utilities",
+          "description": "Internet & Phone"
+        }
+      ]
+    },
+    {
+      "user_id": "USER_00004",
+      "name": "Apolonia Pysz",
+      "email": "soniateper@example.org",
+      "transactions": [
+        {
+          "date": "2026-05-27",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-05-28",
+          "amount": -193.95,
+          "type": "debit",
+          "category": "Dining",
+          "description": "Gas"
+        },
+        {
+          "date": "2026-06-01",
+          "amount": -2500.0,
+          "type": "debit",
+          "category": "Housing",
+          "description": "Rent"
+        },
+        {
+          "date": "2026-06-02",
+          "amount": -136.31,
+          "type": "debit",
+          "category": "Healthcare",
+          "description": "Restaurant"
+        },
+        {
+          "date": "2026-06-02",
+          "amount": -118.91,
+          "type": "debit",
+          "category": "Shopping",
+          "description": "Books"
+        },
+        {
+          "date": "2026-06-03",
+          "amount": -83.51,
+          "type": "debit",
+          "category": "Transport",
+          "description": "Restaurant"
+        },
+        {
+          "date": "2026-06-03",
+          "amount": -37.1,
+          "type": "debit",
+          "category": "Groceries",
+          "description": "Cafe"
+        },
+        {
+          "date": "2026-06-10",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-06-13",
+          "amount": -87.27,
+          "type": "debit",
+          "category": "Transport",
+          "description": "Taxi"
+        },
+        {
+          "date": "2026-06-15",
+          "amount": -49.99,
+          "type": "debit",
+          "category": "Subscription",
+          "description": "Netflix"
+        },
+        {
+          "date": "2026-06-16",
+          "amount": -16.09,
+          "type": "debit",
+          "category": "Shopping",
+          "description": "Restaurant"
+        },
+        {
+          "date": "2026-06-19",
+          "amount": -18.36,
+          "type": "debit",
+          "category": "Groceries",
+          "description": "Haircut"
+        },
+        {
+          "date": "2026-06-20",
+          "amount": -129.0,
+          "type": "debit",
+          "category": "Utilities",
+          "description": "Internet & Phone"
+        },
+        {
+          "date": "2026-06-24",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-06-26",
+          "amount": -83.74,
+          "type": "debit",
+          "category": "Shopping",
+          "description": "Cinema"
+        },
+        {
+          "date": "2026-06-27",
+          "amount": -42.36,
+          "type": "debit",
+          "category": "Shopping",
+          "description": "Taxi"
+        },
+        {
+          "date": "2026-06-27",
+          "amount": -175.52,
+          "type": "debit",
+          "category": "Groceries",
+          "description": "Taxi"
+        },
+        {
+          "date": "2026-06-29",
+          "amount": -185.67,
+          "type": "debit",
+          "category": "Entertainment",
+          "description": "Clothing"
+        },
+        {
+          "date": "2026-07-01",
+          "amount": -2500.0,
+          "type": "debit",
+          "category": "Housing",
+          "description": "Rent"
+        },
+        {
+          "date": "2026-07-03",
+          "amount": -47.45,
+          "type": "debit",
+          "category": "Groceries",
+          "description": "Gym"
+        },
+        {
+          "date": "2026-07-08",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-07-15",
+          "amount": -49.99,
+          "type": "debit",
+          "category": "Subscription",
+          "description": "Netflix"
+        },
+        {
+          "date": "2026-07-18",
+          "amount": -99.7,
+          "type": "debit",
+          "category": "Dining",
+          "description": "Cafe"
+        },
+        {
+          "date": "2026-07-19",
+          "amount": -133.19,
+          "type": "debit",
+          "category": "Shopping",
+          "description": "Books"
+        },
+        {
+          "date": "2026-07-20",
+          "amount": -129.0,
+          "type": "debit",
+          "category": "Utilities",
+          "description": "Internet & Phone"
+        },
+        {
+          "date": "2026-07-20",
+          "amount": -140.84,
+          "type": "debit",
+          "category": "Healthcare",
+          "description": "Books"
+        },
+        {
+          "date": "2026-07-22",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-08-01",
+          "amount": -2500.0,
+          "type": "debit",
+          "category": "Housing",
+          "description": "Rent"
+        },
+        {
+          "date": "2026-08-04",
+          "amount": -16.89,
+          "type": "debit",
+          "category": "Transport",
+          "description": "Supermarket"
+        },
+        {
+          "date": "2026-08-05",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-08-05",
+          "amount": -24.09,
+          "type": "debit",
+          "category": "Healthcare",
+          "description": "Books"
+        },
+        {
+          "date": "2026-08-09",
+          "amount": -120.93,
+          "type": "debit",
+          "category": "Shopping",
+          "description": "Restaurant"
+        },
+        {
+          "date": "2026-08-15",
+          "amount": -49.99,
+          "type": "debit",
+          "category": "Subscription",
+          "description": "Netflix"
+        },
+        {
+          "date": "2026-08-19",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-08-19",
+          "amount": -145.09,
+          "type": "debit",
+          "category": "Dining",
+          "description": "Cinema"
+        },
+        {
+          "date": "2026-08-20",
+          "amount": -129.0,
+          "type": "debit",
+          "category": "Utilities",
+          "description": "Internet & Phone"
+        }
+      ]
+    },
+    {
+      "user_id": "USER_00005",
+      "name": "Dominik R\u00f3\u017cak",
+      "email": "ewelinagospodarek@example.org",
+      "transactions": [
+        {
+          "date": "2026-05-27",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-05-27",
+          "amount": -70.04,
+          "type": "debit",
+          "category": "Dining",
+          "description": "Haircut"
+        },
+        {
+          "date": "2026-06-01",
+          "amount": -2500.0,
+          "type": "debit",
+          "category": "Housing",
+          "description": "Rent"
+        },
+        {
+          "date": "2026-06-05",
+          "amount": -6.82,
+          "type": "debit",
+          "category": "Shopping",
+          "description": "Gym"
+        },
+        {
+          "date": "2026-06-05",
+          "amount": -189.28,
+          "type": "debit",
+          "category": "Healthcare",
+          "description": "Gas"
+        },
+        {
+          "date": "2026-06-08",
+          "amount": -19.29,
+          "type": "debit",
+          "category": "Dining",
+          "description": "Books"
+        },
+        {
+          "date": "2026-06-10",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-06-10",
+          "amount": -178.49,
+          "type": "debit",
+          "category": "Healthcare",
+          "description": "Books"
+        },
+        {
+          "date": "2026-06-15",
+          "amount": -49.99,
+          "type": "debit",
+          "category": "Subscription",
+          "description": "Netflix"
+        },
+        {
+          "date": "2026-06-15",
+          "amount": -58.11,
+          "type": "debit",
+          "category": "Shopping",
+          "description": "Cinema"
+        },
+        {
+          "date": "2026-06-20",
+          "amount": -129.0,
+          "type": "debit",
+          "category": "Utilities",
+          "description": "Internet & Phone"
+        },
+        {
+          "date": "2026-06-24",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-06-27",
+          "amount": -77.06,
+          "type": "debit",
+          "category": "Dining",
+          "description": "Taxi"
+        },
+        {
+          "date": "2026-06-29",
+          "amount": -30.83,
+          "type": "debit",
+          "category": "Transport",
+          "description": "Restaurant"
+        },
+        {
+          "date": "2026-06-29",
+          "amount": -36.51,
+          "type": "debit",
+          "category": "Entertainment",
+          "description": "Books"
+        },
+        {
+          "date": "2026-07-01",
+          "amount": -2500.0,
+          "type": "debit",
+          "category": "Housing",
+          "description": "Rent"
+        },
+        {
+          "date": "2026-07-06",
+          "amount": -187.27,
+          "type": "debit",
+          "category": "Dining",
+          "description": "Haircut"
+        },
+        {
+          "date": "2026-07-06",
+          "amount": -51.54,
+          "type": "debit",
+          "category": "Entertainment",
+          "description": "Gas"
+        },
+        {
+          "date": "2026-07-08",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-07-09",
+          "amount": -44.7,
+          "type": "debit",
+          "category": "Healthcare",
+          "description": "Clothing"
+        },
+        {
+          "date": "2026-07-15",
+          "amount": -49.99,
+          "type": "debit",
+          "category": "Subscription",
+          "description": "Netflix"
+        },
+        {
+          "date": "2026-07-20",
+          "amount": -129.0,
+          "type": "debit",
+          "category": "Utilities",
+          "description": "Internet & Phone"
+        },
+        {
+          "date": "2026-07-22",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-07-30",
+          "amount": -100.26,
+          "type": "debit",
+          "category": "Groceries",
+          "description": "Restaurant"
+        },
+        {
+          "date": "2026-08-01",
+          "amount": -2500.0,
+          "type": "debit",
+          "category": "Housing",
+          "description": "Rent"
+        },
+        {
+          "date": "2026-08-02",
+          "amount": -6.53,
+          "type": "debit",
+          "category": "Shopping",
+          "description": "Clothing"
+        },
+        {
+          "date": "2026-08-04",
+          "amount": -142.19,
+          "type": "debit",
+          "category": "Shopping",
+          "description": "Haircut"
+        },
+        {
+          "date": "2026-08-04",
+          "amount": -12.03,
+          "type": "debit",
+          "category": "Transport",
+          "description": "Gym"
+        },
+        {
+          "date": "2026-08-05",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-08-15",
+          "amount": -49.99,
+          "type": "debit",
+          "category": "Subscription",
+          "description": "Netflix"
+        },
+        {
+          "date": "2026-08-16",
+          "amount": -87.6,
+          "type": "debit",
+          "category": "Transport",
+          "description": "Supermarket"
+        },
+        {
+          "date": "2026-08-19",
+          "amount": 3000.0,
+          "type": "credit",
+          "category": "Income",
+          "description": "Salary"
+        },
+        {
+          "date": "2026-08-19",
+          "amount": -25.2,
+          "type": "debit",
+          "category": "Dining",
+          "description": "Clothing"
+        },
+        {
+          "date": "2026-08-20",
+          "amount": -129.0,
+          "type": "debit",
+          "category": "Utilities",
+          "description": "Internet & Phone"
+        },
+        {
+          "date": "2026-08-20",
+          "amount": -130.87,
+          "type": "debit",
+          "category": "Entertainment",
+          "description": "Pharmacy"
+        },
+        {
+          "date": "2026-08-25",
+          "amount": -88.4,
+          "type": "debit",
+          "category": "Groceries",
+          "description": "Restaurant"
+        }
+      ]
+    }
+  ]
+}
