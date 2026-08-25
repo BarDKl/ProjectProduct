@@ -164,9 +164,3 @@ The Safe-to-Spend Engine is a backend predictive API microservice (Python 3.12 /
 - **Budget approvals:** N/A for PoC (portfolio project, no real infra spend); would require standard cloud-hosting approval if progressed toward pilot.
 - **Partner support (APIs, partnerships):** None for MVP — real Open Banking integration is explicitly deferred beyond this PoC.
 - **Internal dependencies:** Design team for front-end wireframes/UI surfacing; Data/Analytics for event tracking implementation; Legal/Compliance review before any real transaction data is used.
-
-## 9. Related Documents
-
-1. [Market Research Report](https://app.notion.com/p/Market-Research-Report-3ba32be71aab80e2a209de22783f458c?pvs=21) ✅ Complete
-2. [MVP Scope](./MVP%20Scope.md) ✅ Complete
-3. [PoC Report](./PoC%20Report.md) ✅ Complete

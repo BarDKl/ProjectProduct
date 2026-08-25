@@ -38,5 +38,3 @@ UK/EU consumers hold **£15–20 avg/month in "silent" subscription leakage** (i
 **MVP scope alignment:** This business case is served entirely by deterministic rule-based detection (fixed-interval, fixed-amount recurring transactions) — no ML required to prove the value hypothesis, consistent with the defined PoC constraints.
 
 ---
-
-*Prepared as part of the Safe-to-Spend Engine portfolio project — Fintech Product Owner workstream.*

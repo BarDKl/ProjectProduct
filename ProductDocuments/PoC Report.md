@@ -43,17 +43,6 @@ undelivered Should-Haves are explicitly backlogged rather than silently dropped.
 
 ## 3. How It Works
 
-```mermaid
-flowchart LR
-    A["Transaction history<br>(Faker-generated)"] --> B["Group debits by<br>(description, amount)"]
-    B --> C{"Interval consistent<br>within ±4 days?"}
-    C -- "no" --> D["Ignored — not recurring"]
-    C -- "yes" --> E["Recurring liability<br>+ projected next_due"]
-    E --> F{"next_due within<br>rolling window?"}
-    F -- "yes" --> G["Deducted from<br>Safe-to-Spend"]
-    F -- "no" --> H["Visible in /liabilities,<br>excluded from deduction"]
-```
-
 Four steps, all in `app/recurring.py`:
 
 1. **Ingest** — synthetic transactions, shaped like Open Banking data (`data_generator.py`).
@@ -131,9 +120,3 @@ opacity that an ML approach would require at this stage.
 3. Front-end surfacing (Design-owned dependency, already flagged in PRD Section 8) — needed
    before any of the OKR's adoption/engagement instrumentation (`sts_card_viewed`,
    `sts_breakdown_expanded`) can fire.
-
-## Related Documents
-
-1. [Market Research Report](./Market%20Research%20Report.md)
-2. [Product Requirements Document](./Safe%20to%20Spend%20Product%20Requirements%20Document.md)
-3. [MVP Scope](./MVP%20Scope.md)
