@@ -91,12 +91,12 @@ Bank users frequently experience **"subscription fatigue"** — a state in which
 
 ## 5. How Do We Know These Problems Exist? (Research)
 
-Findings are detailed in the companion [Market Research Report](https://app.notion.com/p/Market-Research-Report-3ba32be71aab80e2a209de22783f458c?pvs=21). Key evidence:
+Full details are in the companion [Market Research Report](https://app.notion.com/p/Market-Research-Report-3ba32be71aab80e2a209de22783f458c?pvs=21). Key evidence:
 
-- UK/EU consumers carry an estimated **£15–20/month in "silent" subscription leakage** (industry estimates), compounded by static ledger balances that misrepresent true spending power.
-- Competitor benchmarking (Barclays, HSBC, Monzo, Starling) shows **no major player offers automated, zero-setup, forward-looking liability forecasting** — existing solutions (e.g. Monzo/Starling "Bills Pots") rely on manual user configuration. This is a genuine white space, not an incremental feature.
-- The core insight from research: the pain point isn't a lack of transaction data — it's a lack of **interpretation**. Users already generate the signal; no system currently converts it into a forward-looking number.
-- "Balance confusion" and overdraft-related queries are established as a recurring, high-volume support category industry-wide, directly linking this problem to support cost (a Bank KPI).
+- UK/EU customers lose an estimated **£15–20 a month** to subscriptions they've lost track of — made worse by balances that don't show what's actually free to spend.
+- We looked at Barclays, HSBC, Monzo, and Starling: **none of them auto-forecast upcoming bills for you.** Even Monzo and Starling's "Bills Pots" need the user to set them up manually. Nobody's solved this — it's a real gap, not a small tweak.
+- The core insight: people aren't missing data, they're missing **interpretation**. The transaction history is already there — no one's turning it into a heads-up.
+- Confusion about balances and overdrafts is already one of the most common reasons people contact support industry-wide, so this ties directly to support costs (a Bank KPI).
 
 ## 6. Solution
 
@@ -128,8 +128,6 @@ The Safe-to-Spend Engine is a backend predictive API microservice (Python 3.12 /
 3. Recurring-liability detector scans history for fixed-interval, fixed-amount patterns.
 4. Liabilities falling within the next 14 days are summed.
 5. Service returns: current balance, safe-to-spend balance, and the list of upcoming liabilities driving the deduction (for transparency).
-
-*Note: Front-end wireframes/mockups for surfacing this data in-app are owned by the Design team and are tracked as an open dependency (Section 8) — out of scope for this backend PoC.*
 
 **User Stories & Acceptance Criteria**
 
@@ -163,4 +161,3 @@ The Safe-to-Spend Engine is a backend predictive API microservice (Python 3.12 /
 - **Infrastructure requirements:** None beyond the containerized microservice itself for the PoC — no production data pipeline required at this stage.
 - **Budget approvals:** N/A for PoC (portfolio project, no real infra spend); would require standard cloud-hosting approval if progressed toward pilot.
 - **Partner support (APIs, partnerships):** None for MVP — real Open Banking integration is explicitly deferred beyond this PoC.
-- **Internal dependencies:** Design team for front-end wireframes/UI surfacing; Data/Analytics for event tracking implementation; Legal/Compliance review before any real transaction data is used.
